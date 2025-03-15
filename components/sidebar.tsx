@@ -43,7 +43,7 @@ const Sidebar = () => {
 			<div
 				className={`
               fixed top-0 left-0 z-50 
-              flex flex-col bg-white w-[22rem] pt-0 p-8 justify-start items-center min-h-screen 
+              flex flex-col bg-white w-[22rem] sm:w-[29rem] pt-0 p-8 justify-start items-center min-h-screen 
               transition-all duration-300 ease-linear shadow-lg
               ${isOpen ? "translate-x-0" : "-translate-x-full"}
               ${isLargeScreen && isOpen ? "lg:relative lg:shadow-xs" : ""}
