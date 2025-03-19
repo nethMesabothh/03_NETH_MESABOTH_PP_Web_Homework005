@@ -130,3 +130,26 @@ body {
 		@apply text-foreground bg-[#F5F7F8];
 	}
 }
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 9999px; /* rounded-full */
+	background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 9999px; /* rounded-full */
+	background-color: #d1d5db; /* bg-gray-300 */
+}
+
+@media (prefers-color-scheme: dark) {
+	::-webkit-scrollbar-track {
+		background-color: #d1d5db;
+	}
+	::-webkit-scrollbar-thumb {
+		background-color: #f3f4f6; /* dark:bg-neutral-500 (adjust as needed) */
+	}
+}

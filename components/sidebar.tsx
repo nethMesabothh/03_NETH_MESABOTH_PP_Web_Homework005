@@ -63,7 +63,6 @@ const Sidebar = () => {
 					<h2 className="font-semibold">Glorious Purpose</h2>
 					<p className="text-custom-secondary">loki@gmail.com</p>
 				</div>
-
 				<ul className="flex flex-col gap-2 items-start">
 					{menus.map((menu) => {
 						const isActive = pathname === menu.link;

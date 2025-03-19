@@ -67,7 +67,7 @@ const CartoonComponent = ({
 	};
 
 	return (
-		<Card>
+		<Card className="h-[50rem] rounded-2xl overflow-y-scroll">
 			<CardContent>
 				<div className="flex justify-between items-center">
 					<FilterCartoon
@@ -80,7 +80,7 @@ const CartoonComponent = ({
 				{isLoading ? (
 					<Loader2 className="h-8 w-8 animate-spin text-[#087e8b]" />
 				) : (
-					<div className="grid grid-cols-2 max-sm:grid-cols-1 gap-14 mt-10 max-sm:place-items-center">
+					<div className="grid grid-cols-3 max-sm:grid-cols-1 gap-14 mt-10 place-items-center">
 						{filteredCartoon.map((cartoon) => {
 							return (
 								<Link

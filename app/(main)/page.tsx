@@ -3,10 +3,12 @@ import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 import Image from "next/image";
 import { TagIcon } from "lucide-react";
+import Search from "@/components/search";
 
 export default function Home() {
 	return (
 		<>
+			<Search query="" page="" />
 			{/* Main Content Homepage */}
 			<Card>
 				<CardContent className="w-full">

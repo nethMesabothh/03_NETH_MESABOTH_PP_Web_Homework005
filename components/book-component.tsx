@@ -60,7 +60,7 @@ const BookComponent = ({ initialBooks, bookCategories, query }: props) => {
 
 	return (
 		<Card>
-			<CardContent>
+			<CardContent className="h-[48rem] rounded-2xl overflow-y-scroll">
 				<div className="flex justify-between items-center">
 					<FilterBook
 						bookCategories={bookCategories}
@@ -87,7 +87,7 @@ const BookComponent = ({ initialBooks, bookCategories, query }: props) => {
 												alt={book.book_title}
 												width={160}
 												height={150}
-												className="object-cover rounded-lg sm:w-[150px] sm:h-[185px] sm:object-center shadow-xl drop-shadow-xl"
+												className="object-cover rounded-lg sm:w-[150px] sm:h-[185px] sm:object-top shadow-xl drop-shadow-xl"
 											/>
 											<Link
 												href={{
@@ -98,6 +98,7 @@ const BookComponent = ({ initialBooks, bookCategories, query }: props) => {
 														title: book.book_title,
 													},
 												}}
+												scroll={false}
 												className="uppercase text-center mx-2 rounded-lg bg-custom-third text-gray-700 sm:text-sm sm:p-2 p-1"
 											>
 												Read full article
